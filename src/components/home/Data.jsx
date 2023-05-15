@@ -17,11 +17,9 @@ const Data = () => {
             2000,
             ' Ordinary Guy.',
             2000,
-            ' Editor.',
+            ' Video Editor.',
             2000,
-            ' Gamer.',
-            2000,
-            ' Student.',
+            ' College Student.',
             2000,
             ' Programmer.',
             2000

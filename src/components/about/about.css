@@ -1,0 +1,114 @@
+.about__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: end;
+}
+
+.title {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-1-5);    
+}
+
+.design-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: -10rem;
+    margin-left: 20px;
+    padding: 100px 0;
+  }
+  
+  .design {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timeline-content {
+    padding: 20px;
+    border-radius: 5px;
+    color: #333333;
+    padding: 0.75rem;
+    transition: 0.4s ease;
+    overflow-wrap: break-word !important;
+    margin: 1rem;
+    margin-bottom: 20px;
+    border-radius: 6px;
+  }
+  
+  .timeline-component {
+    margin: 0px 20px 20px 20px;
+  }
+
+  @media screen and (max-width: 992px) {
+    .about__container {
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+    }
+
+    .about__data {
+      text-align: justify;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    .design-section {
+      margin-top: 0;
+      padding: 50px 0;
+    }
+
+    .timeline {
+      width: 100%;
+    }
+
+    .timeline-content {
+      margin: 0px 0px 20px 0px;
+    }
+
+    .timeline-component {
+      margin: 0px 0px 20px 0px;
+    }
+
+    .design-section {
+      margin-top: 0;
+      padding: 50px 0;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .timeline {
+      display: grid;
+      grid-template-columns: 1fr 3px 1fr;
+    }
+    .timeline-middle {
+      position: relative;
+      background-image: linear-gradient(45deg, #808080, #a6a6a6);
+      width: 3px;
+      height: 100%;
+    }
+    
+    .timeline-circle {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-image: linear-gradient(45deg, #808080, #a6a6a6);
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+    }
+  }
+  
