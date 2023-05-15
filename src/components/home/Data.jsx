@@ -1,5 +1,5 @@
 import React from 'react'
-import Typical from 'react-typical'
+import Typewriter from 'typewriter-effect';
 
 const Data = () => {
   return (
@@ -7,24 +7,14 @@ const Data = () => {
       <div className="home__data">
         <h1 className='home__title'> Fauzan Gifari
         </h1>
-        <h3 className="home__subtitle">I'm a 
-        
-        <Typical 
-          loop={Infinity}
-          wrapper='b'
-          steps={[
-            ' Web Developer.',
-            2000,
-            ' Ordinary Guy.',
-            2000,
-            ' Video Editor.',
-            2000,
-            ' College Student.',
-            2000,
-            ' Programmer.',
-            2000
-          ]} />
-        
+        <h3 className="home__subtitle text">
+          <Typewriter
+            options={{
+            strings: ['Web Developer', 'Video Editor', 'Ordinary People', 'College Student'],
+            autoStart: true,
+            loop: true,
+            }}
+          />
         </h3>
         <p className='home__description'>I enjoy learning new things and exploring the world around me. I have an interest in the world of technology, and strive to constantly develop my skills and knowledge in this field. 
         I also enjoy sharing my experience and knowledge with others.</p>
